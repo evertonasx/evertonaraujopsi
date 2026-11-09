@@ -307,9 +307,9 @@ body::before { content:""; position:fixed; inset:0; z-index:7; pointer-events:no
 
 /* Abordagem terapêutica: bloco editorial em verde profundo */
 .approach {
-  --approach-green: #29463D;
-  --approach-green-card: #2D4B41;
-  --approach-accent: #D6A08E;
+  --approach-green: #163A59;
+  --approach-green-card: #163A59;
+  --approach-accent: #D9B4C1;
   background: var(--approach-green);
   color: #F8F5F0;
 }
@@ -404,7 +404,7 @@ body::before { content:""; position:fixed; inset:0; z-index:7; pointer-events:no
 }
 .approach-card:hover {
   transform: translateY(-5px);
-  background: #34564A;
+  background: #1B4568;
 }
 .approach-footnote {
   color: rgba(248,245,240,.62);
