@@ -49,8 +49,7 @@ export default function Home() {
       <header className="header">
         <div className="container nav-wrap">
           <a className="brand" href="#inicio" aria-label="Everton Araújo, início">
-            <span className="brand-mark">EA</span>
-            <span className="brand-copy"><strong>Everton Araújo</strong><small>PSICÓLOGO · CRP 20/10822</small></span>
+            <Image src="/logo-everton.png" alt="Everton Araújo — Psicólogo, CRP 20/10822" width={631} height={395} priority className="brand-logo" />
           </a>
           <nav className="nav-links" aria-label="Navegação principal">
             <a href="#sobre">Sobre mim</a>
@@ -212,7 +211,7 @@ export default function Home() {
 
       <footer className="footer">
         <div className="container footer-main">
-          <a className="brand footer-brand" href="#inicio"><span className="brand-mark">EA</span><span className="brand-copy"><strong>Everton Araújo</strong><small>PSICÓLOGO · CRP 20/10822</small></span></a>
+          <a className="brand footer-brand" href="#inicio" aria-label="Everton Araújo, voltar ao início"><Image src="/logo-everton.png" alt="Everton Araújo — Psicólogo, CRP 20/10822" width={631} height={395} className="brand-logo footer-brand-logo" /></a>
           <p>Psicologia clínica com ética, escuta e responsabilidade.</p>
           <div className="footer-links"><a href={INSTAGRAM} target="_blank" rel="noreferrer">Instagram</a><a href={LATTES} target="_blank" rel="noreferrer">Currículo Lattes</a><a href={EMAIL}>E-mail</a></div>
         </div>
