@@ -4,6 +4,7 @@ import { useEffect } from "react";
 
 export default function ScrollEffects() {
   useEffect(() => {
+    document.documentElement.classList.add("reveal-ready");
     const elements = Array.from(document.querySelectorAll<HTMLElement>("[data-reveal]"));
     if (!("IntersectionObserver" in window)) {
       elements.forEach((element) => element.classList.add("is-visible"));
