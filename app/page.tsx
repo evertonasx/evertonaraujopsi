@@ -69,7 +69,7 @@ export default function Home() {
               <a className="button button-primary" href={WHATSAPP} target="_blank" rel="noreferrer"><MessageCircle size={18} /> Conversar pelo WhatsApp</a>
               <a className="button button-contact-top" href="#formulario">Prefiro deixar meu contato <ArrowRight size={18} /></a>
               <a className="text-link" href="#sobre">Conheça meu trabalho <ArrowDown size={16} /></a>
-            </div>      </div>
+            </div>
             <div className="hero-note"><span className="note-dot" /> <span className="hero-note-text">Atendimento presencial em Boa Vista e on-line<br /><strong>Adolescentes a partir de 12 anos e adultos</strong></span></div>
           </div>
           <div className="hero-visual" data-reveal="left">
