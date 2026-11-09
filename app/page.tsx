@@ -93,7 +93,7 @@ export default function Home() {
               <span className="caption-line" />
               <span><strong>Everton Araújo</strong><small>Psicólogo · CRP 20/10822</small></span>
             </div>
-            <div className="floating-note"><Sparkles size={17} /><span>Escuta qualificada<br /><strong>e cuidado psicológico</strong></span></div>
+            <div className="floating-note"><strong>Everton Araújo</strong><span>Psicólogo · CRP 20/10822</span></div>
           </div>
         </div>
         <div className="container hero-bottom"><span>01 / 06</span><span className="hero-bottom-line" /><span>Conheça uma psicologia construída em conjunto</span></div>
