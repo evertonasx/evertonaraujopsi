@@ -139,9 +139,9 @@ export default function Home() {
             <p>A Terapia Cognitivo-Comportamental orienta meu trabalho clínico. É uma abordagem que valoriza a participação ativa, os objetivos compartilhados e estratégias construídas de acordo com cada pessoa.</p>
           </div>
           <div className="approach-cards" data-reveal="up">
-            <article className="approach-card"><span className="card-index">01</span><div className="card-icon">↗</div><h3>Pensamentos</h3><p>Investigar interpretações e crenças que influenciam a maneira como percebemos as situações.</p></article>
-            <article className="approach-card"><span className="card-index">02</span><div className="card-icon">◎</div><h3>Emoções</h3><p>Reconhecer e compreender as respostas emocionais, desenvolvendo formas mais funcionais de lidar com elas.</p></article>
-            <article className="approach-card"><span className="card-index">03</span><div className="card-icon">⌁</div><h3>Comportamentos</h3><p>Identificar padrões de ação e experimentar novas estratégias no cotidiano, respeitando seu contexto.</p></article>
+            <article className="approach-card"><span className="card-index">01</span><div className="card-icon card-icon-corner">↗</div><h3>Pensamentos</h3><p>Investigar interpretações e crenças que influenciam a maneira como percebemos as situações.</p></article>
+            <article className="approach-card"><span className="card-index">02</span><div className="card-icon card-icon-center">◎</div><h3>Emoções</h3><p>Reconhecer e compreender as respostas emocionais, desenvolvendo formas mais funcionais de lidar com elas.</p></article>
+            <article className="approach-card"><span className="card-index">03</span><div className="card-icon card-icon-corner">⌁</div><h3>Comportamentos</h3><p>Identificar padrões de ação e experimentar novas estratégias no cotidiano, respeitando seu contexto.</p></article>
           </div>
           <p className="approach-footnote">A psicoterapia não oferece fórmulas prontas. O processo é individualizado e construído em colaboração.</p>
         </div>
