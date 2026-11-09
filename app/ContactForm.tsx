@@ -4,7 +4,6 @@ import { useState } from "react";
 import { ArrowRight, CheckCircle2, LoaderCircle } from "lucide-react";
 
 export default function ContactForm() {
-  const [open, setOpen] = useState(false);
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
@@ -27,12 +26,8 @@ export default function ContactForm() {
   }
 
   return (
-    <div className="contact-form-wrap">
-      <button className="contact-form-toggle" type="button" onClick={() => setOpen(!open)}>
-        Prefiro deixar meu contato <ArrowRight size={16} />
-      </button>
-      {open && (
-        <form className="contact-form" onSubmit={handleSubmit}>
+    <div className="contact-form-wrap" id="formulario">
+      <form className="contact-form" onSubmit={handleSubmit}>
           <p className="form-intro">Preencha seus dados e entrarei em contato. Não inclua informações íntimas ou detalhes clínicos neste formulário.</p>
           <label>Seu nome<input name="nome" autoComplete="name" required maxLength={100} placeholder="Como posso chamar você?" /></label>
           <label>WhatsApp<input name="whatsapp" type="tel" autoComplete="tel" required maxLength={25} placeholder="(00) 00000-0000" /></label>
@@ -47,8 +42,7 @@ export default function ContactForm() {
           {status === "success" && <p className="form-status"><CheckCircle2 size={17} /> Dados enviados. Obrigado pelo contato!</p>}
           {status === "error" && <p className="form-status form-error">Não foi possível enviar agora. Tente novamente ou fale comigo pelo WhatsApp.</p>}
           <small className="form-privacy">Seus dados serão usados somente para retornar seu contato.</small>
-        </form>
-      )}
+      </form>
     </div>
   );
 }
