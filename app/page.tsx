@@ -40,13 +40,6 @@ export default function Home() {
   return (
     <main>
       <ScrollEffects />
-      <div className="topline">
-        <div className="container topline-inner">
-          <span>Psicologia Clínica · Boa Vista, RR</span>
-          <span className="topline-right"><ShieldCheck size={14} /> Atendimento ético e individualizado</span>
-        </div>
-      </div>
-
       <header className="header">
         <div className="container nav-wrap">
           <a className="brand" href="#inicio" aria-label="Everton Araújo, início">
