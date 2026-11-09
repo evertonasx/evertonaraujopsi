@@ -342,20 +342,18 @@ body::before { content:""; position:fixed; inset:0; z-index:7; pointer-events:no
 .approach-cards {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0;
+  gap: 16px;
   background: transparent;
-  border: 1px solid rgba(248,245,240,.2);
-  border-radius: 5px;
-  overflow: hidden;
+  border: 0;
+  overflow: visible;
 }
 .approach-card {
-  min-height: 278px;
-  padding: 30px 32px 34px;
+  min-height: 320px;
+  padding: 30px 28px 34px;
   background: var(--approach-green-card);
+  border: 1px solid rgba(248,245,240,.24);
+  border-radius: 12px;
   position: relative;
-}
-.approach-card + .approach-card {
-  border-left: 1px solid rgba(248,245,240,.2);
 }
 .card-index {
   color: var(--approach-accent);
@@ -393,9 +391,9 @@ body::before { content:""; position:fixed; inset:0; z-index:7; pointer-events:no
 }
 .approach-card p {
   color: rgba(248,245,240,.69);
-  font-size: 12px;
-  line-height: 1.85;
-  max-width: 290px;
+  font-size: 13px;
+  line-height: 1.9;
+  max-width: 330px;
   margin: 0;
 }
 .approach-card:has(.card-icon-center) p {
@@ -418,8 +416,8 @@ body::before { content:""; position:fixed; inset:0; z-index:7; pointer-events:no
 }
 @media (max-width: 600px) {
   .approach-cards { grid-template-columns: 1fr; }
-  .approach-card { min-height: 225px; padding: 27px 25px 30px; }
-  .approach-card + .approach-card { border-left: 0; border-top: 1px solid rgba(248,245,240,.2); }
+  .approach-card { min-height: 0; padding: 27px 25px 30px; border-radius: 11px; }
+  .approach-card + .approach-card { border: 1px solid rgba(248,245,240,.24); }
   .approach-card h3 { font-size: 25px; }
   .approach-card:has(.card-icon-center) h3 { margin-top: 0; }
   .approach-footnote { max-width: 440px; }
