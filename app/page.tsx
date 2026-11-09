@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ScrollEffects from "./ScrollEffects";
+import ContactForm from "./ContactForm";
 import {
   ArrowDown, ArrowRight, Check, ChevronDown, Instagram, Mail,
   MapPin, Menu, MessageCircle, Monitor, ShieldCheck, Sparkles,
@@ -70,7 +71,7 @@ export default function Home() {
         <div className="container hero-grid">
           <div className="hero-copy" data-reveal="up">
             <div className="eyebrow"><span /> PSICOLOGIA CLÍNICA</div>
-            <h1>Um espaço para <em>se escutar</em>, compreender e construir novos caminhos.</h1>
+            <h1 className="hero-title"><span style={{"--line":0} as React.CSSProperties}>Um espaço para</span><span style={{"--line":1} as React.CSSProperties}><em>se escutar</em>, compreender</span><span style={{"--line":2} as React.CSSProperties}>e construir novos caminhos.</span></h1>
             <p className="hero-lead">
               Psicoterapia com acolhimento, colaboração e responsabilidade técnica.
               Um processo construído no seu ritmo, a partir da sua história.
@@ -81,7 +82,7 @@ export default function Home() {
               </a>
               <a className="text-link" href="#sobre">Conheça meu trabalho <ArrowDown size={16} /></a>
             </div>
-            <div className="hero-note"><span className="note-dot" /> Atendimento presencial em Boa Vista e on-line</div>
+            <div className="hero-note"><span className="note-dot" /> <span className="hero-note-text">Atendimento presencial em Boa Vista e on-line<br /><strong>Adolescentes a partir de 12 anos e adultos</strong></span></div>
           </div>
           <div className="hero-visual" data-reveal="left">
             <div className="photo-frame">
@@ -200,7 +201,7 @@ export default function Home() {
 
       <section className="contact section-pad" id="contato">
         <div className="container contact-inner" data-reveal="up">
-          <div className="contact-copy"><div className="eyebrow light-eyebrow"><span /> SEU PRÓXIMO PASSO</div><h2>Começar também é uma forma de <em>cuidar de si.</em></h2><p>Se fizer sentido para você, estou disponível para conversar sobre o atendimento e esclarecer suas dúvidas iniciais.</p><a className="button button-light" href={BOOKING} target="_blank" rel="noreferrer">Agendar atendimento <ArrowRight size={18} /></a></div>
+          <div className="contact-copy"><div className="eyebrow light-eyebrow"><span /> SEU PRÓXIMO PASSO</div><h2>Começar também é uma forma de <em>cuidar de si.</em></h2><p>Se fizer sentido para você, estou disponível para conversar sobre o atendimento e esclarecer suas dúvidas iniciais.</p><a className="button button-light" href={BOOKING} target="_blank" rel="noreferrer">Agendar atendimento <ArrowRight size={18} /></a><ContactForm /></div>
           <div className="contact-details">
             <a href={WHATSAPP} target="_blank" rel="noreferrer"><MessageCircle /><span><small>WHATSAPP</small><strong>Conversar e tirar dúvidas</strong></span><ArrowRight /></a>
             <a href={EMAIL}><Mail /><span><small>E-MAIL</small><strong>psievertonaraujo@gmail.com</strong></span><ArrowRight /></a>
