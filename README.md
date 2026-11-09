@@ -29,3 +29,6 @@ Abra `http://localhost:3000`.
 
 ## Publicar
 O projeto pode ser enviado para um repositório GitHub e importado na Vercel. A Vercel detecta Next.js automaticamente.
+
+
+Atualização de interface: formulário de contato por e-mail, animações de entrada, fio de rolagem e efeito de iluminação do cursor.
