@@ -3,7 +3,7 @@ import ScrollEffects from "./ScrollEffects";
 import ContactForm from "./ContactForm";
 import {
   ArrowDown, ArrowRight, Check, ChevronDown, Instagram, Mail,
-  MapPin, Menu, MessageCircle, Monitor, ShieldCheck, Sparkles,
+  MapPin, Menu, MessageCircle, Monitor,
 } from "lucide-react";
 
 const WHATSAPP =
@@ -89,7 +89,7 @@ export default function Home() {
                 className="hero-photo"
               />
             </div>
-            <div className="floating-note"><strong>Everton Araújo</strong><span>Psicólogo · CRP 20/10822</span></div>
+            <div className="floating-note"><strong>Everton Araújo</strong><span>Psicólogo Clínico · CRP 20/10822</span></div>
           </div>
         </div>
         <div className="container hero-bottom"><span>01 / 06</span><span className="hero-bottom-line" /><span>Conheça uma psicologia construída em conjunto</span></div>
