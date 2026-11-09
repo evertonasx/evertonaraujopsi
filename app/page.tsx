@@ -89,10 +89,6 @@ export default function Home() {
                 className="hero-photo"
               />
             </div>
-            <div className="photo-caption">
-              <span className="caption-line" />
-              <span><strong>Everton Araújo</strong><small>Psicólogo · CRP 20/10822</small></span>
-            </div>
             <div className="floating-note"><strong>Everton Araújo</strong><span>Psicólogo · CRP 20/10822</span></div>
           </div>
         </div>
