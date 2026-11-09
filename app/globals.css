@@ -304,3 +304,124 @@ body::before { content:""; position:fixed; inset:0; z-index:7; pointer-events:no
   .hero-title span { opacity:1; transform:none; animation:none; }
   .scroll-thread { display:none; }
 }
+
+/* Abordagem terapêutica: bloco editorial em verde profundo */
+.approach {
+  --approach-green: #29463D;
+  --approach-green-card: #2D4B41;
+  --approach-accent: #D6A08E;
+  background: var(--approach-green);
+  color: #F8F5F0;
+}
+.approach .light-eyebrow { color: rgba(245,232,224,.72); }
+.approach .light-eyebrow span { background: var(--approach-accent); }
+.approach-heading {
+  grid-template-columns: 1.08fr .92fr;
+  gap: 76px;
+  align-items: end;
+  margin-bottom: 52px;
+}
+.approach h2 {
+  color: #F8F5F0;
+  max-width: 620px;
+  font-size: clamp(42px, 4.8vw, 62px);
+  line-height: 1.08;
+}
+.approach h2 em {
+  color: var(--approach-accent);
+  background: none;
+  -webkit-text-fill-color: var(--approach-accent);
+  font-style: italic;
+}
+.approach-heading > p {
+  max-width: 470px;
+  color: rgba(248,245,240,.76);
+  font-size: 13px;
+  line-height: 1.95;
+}
+.approach-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+  background: transparent;
+  border: 1px solid rgba(248,245,240,.2);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.approach-card {
+  min-height: 278px;
+  padding: 30px 32px 34px;
+  background: var(--approach-green-card);
+  position: relative;
+}
+.approach-card + .approach-card {
+  border-left: 1px solid rgba(248,245,240,.2);
+}
+.card-index {
+  color: var(--approach-accent);
+  font-size: 10px;
+  letter-spacing: .16em;
+}
+.card-icon {
+  color: var(--approach-accent);
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  line-height: 1;
+}
+.card-icon-corner {
+  position: absolute;
+  top: 27px;
+  right: 30px;
+  margin: 0;
+}
+.card-icon-center {
+  display: block;
+  width: fit-content;
+  margin: 27px auto 17px;
+  font-size: 35px;
+}
+.approach-card h3 {
+  color: #F8F5F0;
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  font-weight: 500;
+  margin: 43px 0 12px;
+}
+.approach-card:has(.card-icon-center) h3 {
+  margin-top: 0;
+  text-align: center;
+}
+.approach-card p {
+  color: rgba(248,245,240,.69);
+  font-size: 12px;
+  line-height: 1.85;
+  max-width: 290px;
+  margin: 0;
+}
+.approach-card:has(.card-icon-center) p {
+  text-align: center;
+  margin-inline: auto;
+}
+.approach-card:hover {
+  transform: translateY(-5px);
+  background: #34564A;
+}
+.approach-footnote {
+  color: rgba(248,245,240,.62);
+  text-align: center;
+  font-size: 10px;
+  line-height: 1.7;
+  margin: 25px auto 0;
+}
+@media (max-width: 900px) {
+  .approach-heading { grid-template-columns: 1fr; gap: 22px; }
+}
+@media (max-width: 600px) {
+  .approach-cards { grid-template-columns: 1fr; }
+  .approach-card { min-height: 225px; padding: 27px 25px 30px; }
+  .approach-card + .approach-card { border-left: 0; border-top: 1px solid rgba(248,245,240,.2); }
+  .approach-card h3 { font-size: 25px; }
+  .approach-card:has(.card-icon-center) h3 { margin-top: 0; }
+  .approach-footnote { max-width: 440px; }
+}
+
