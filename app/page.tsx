@@ -42,18 +42,14 @@ export default function Home() {
       <ScrollEffects />
       <header className="header">
         <div className="container nav-wrap">
-          <a className="brand" href="#inicio" aria-label="Everton Araújo, início">
-            <Image src="/logo-everton.png" alt="Everton Araújo — Psicólogo, CRP 20/10822" width={631} height={395} priority className="brand-logo" />
-          </a>
+          <a className="brand brand-text" href="#inicio" aria-label="Everton Araújo, início"><strong>Everton Araújo</strong><span>Psicólogo Clínico · CRP 20/10822</span></a>
           <nav className="nav-links" aria-label="Navegação principal">
             <a href="#sobre">Sobre mim</a>
             <a href="#abordagem">Abordagem</a>
             <a href="#atendimento">Atendimento</a>
             <a href="#duvidas">Dúvidas</a>
           </nav>
-          <a className="button button-small button-outline nav-cta" href={BOOKING} target="_blank" rel="noreferrer">
-            Agendar conversa <ArrowRight size={16} />
-          </a>
+          <a className="button button-small nav-cta" href={WHATSAPP} target="_blank" rel="noreferrer"><MessageCircle size={16} /> Contato</a>
           <a className="mobile-menu" href="#contato" aria-label="Ir para contato"><Menu /></a>
         </div>
       </header>
@@ -70,12 +66,10 @@ export default function Home() {
               Um processo construído no seu ritmo, a partir da sua história.
             </p>
             <div className="hero-actions">
+              <a className="button button-primary" href={WHATSAPP} target="_blank" rel="noreferrer"><MessageCircle size={18} /> Conversar pelo WhatsApp</a>
               <a className="button button-contact-top" href="#formulario">Prefiro deixar meu contato <ArrowRight size={18} /></a>
-              <a className="button button-primary" href={BOOKING} target="_blank" rel="noreferrer">
-                Agende seu atendimento <ArrowRight size={18} />
-              </a>
               <a className="text-link" href="#sobre">Conheça meu trabalho <ArrowDown size={16} /></a>
-            </div>
+            </div>      </div>
             <div className="hero-note"><span className="note-dot" /> <span className="hero-note-text">Atendimento presencial em Boa Vista e on-line<br /><strong>Adolescentes a partir de 12 anos e adultos</strong></span></div>
           </div>
           <div className="hero-visual" data-reveal="left">
